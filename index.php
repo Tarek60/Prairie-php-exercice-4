@@ -1,14 +1,16 @@
 <?php
-for ($number = 0; $number <= 100; $number++) {
- if ($number % 3 == 0) {
-  echo 'Fizz';
-}
- if ($number % 5 == 0) {
-  echo 'Buzz';
-}
- if ($number % 3 AND 5 == 0) {
+for ($number = 1; $number <= 100; $number++) {
+ if ($number % 3 == 0 && $number % 5 == 0) {
   echo 'FizzBuzz';
-  echo $number.' ';
+
+} elseif ($number % 3 == 0) {
+  echo 'Fizz';
+
+} elseif ($number % 5 == 0) {
+  echo 'Buzz';
+
+} else {
+  echo $number .' ';
   }
  }
 ?>
